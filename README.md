@@ -34,4 +34,11 @@ modern-hotel-website
 
 This project utilizes Bootstrap for layout and responsiveness. Ensure you have an internet connection to load Bootstrap from the CDN, or you can download Bootstrap and link it locally.
 
-## Website Link -
+## Clone Link
+
+Clone the repository using the following link:
+[https://github.com/KaveenDK/Hotel-Website.git](https://github.com/KaveenDK/Hotel-Website.git)
+
+## Website Link
+
+Hotel Website By KaveeN - [https://hotel-website-by-kaveen.web.app/](https://hotel-website-by-kaveen.web.app/)
