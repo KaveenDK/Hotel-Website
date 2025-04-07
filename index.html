@@ -3,185 +3,881 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>KaveeN Hotel</title>
+    <title>KaveeN Hotel - Luxury Accommodations</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
     <link rel="stylesheet" href="css/styles.css" />
-    <link rel="icon" href="/assets/images/hotel-logo.jpg" />
+    <link rel="icon" href="assets/images/hotel-logo.png" />
   </head>
   <body>
-    <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">KaveeN Hotel</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="#services">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#gallery">Gallery</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#testimonials">Testimonials</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+    <!-- Navigation -->
+    <header class="bg-light">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="#">
+              <img
+                src="assets/images/hotel-logo2.png"
+                alt="Logo"
+                height="40"
+                class="d-inline-block align-top me-2"
+              />
+              KaveeN Hotel
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#rooms">Rooms</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#services">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#gallery">Gallery</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact">Contact</a>
+                </li>
+                <li class="nav-item ms-lg-3">
+                  <a class="btn btn-primary" href="#booking">Book Now</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
     </header>
 
-    <section id="hero" class="hero">
-      <div class="container text-center">
-        <h1>Welcome to KaveeN Hotel</h1>
-        <p>Your comfort is our priority</p>
-        <a href="#services" class="btn btn-primary">Explore Our Services</a>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="container h-100 d-flex align-items-center">
+        <div class="text-white">
+          <h1 class="display-3 fw-bold mb-3">Experience Luxury Redefined</h1>
+          <p class="lead mb-4">
+            Your perfect getaway starts here at KaveeN Hotel
+          </p>
+          <a href="#booking" class="btn btn-primary btn-lg me-2">Book Now</a>
+          <a href="#rooms" class="btn btn-outline-light btn-lg"
+            >Explore Rooms</a
+          >
+        </div>
       </div>
     </section>
 
-    <section id="services" class="services">
+    <!-- Welcome Section -->
+    <section class="py-5">
       <div class="container">
-        <h2>Our Services</h2>
-        <div class="row">
-          <div class="col-md-4">
-            <h3>Luxury Rooms</h3>
-            <p>Experience the best comfort in our luxury rooms.</p>
+        <div class="row align-items-center">
+          <div class="col-lg-6 mb-4 mb-lg-0">
+            <h2 class="fw-bold mb-4">Welcome to KaveeN Hotel</h2>
+            <p class="lead">Where luxury meets comfort</p>
+            <p>
+              Located in the heart of the city, KaveeN Hotel offers unparalleled
+              hospitality with world-class amenities. Our commitment to
+              excellence ensures every guest enjoys a memorable stay.
+            </p>
+            <a href="#about" class="btn btn-outline-primary">Discover More</a>
           </div>
-          <div class="col-md-4">
-            <h3>Fine Dining</h3>
-            <p>Enjoy exquisite meals prepared by top chefs.</p>
-          </div>
-          <div class="col-md-4">
-            <h3>Spa & Wellness</h3>
-            <p>Relax and rejuvenate with our spa services.</p>
+          <div class="col-lg-6">
+            <div class="row g-3">
+              <div class="col-6">
+                <img
+                  src="/assets/images/hotel-lobby.png"
+                  alt="Hotel Lobby"
+                  class="img-fluid rounded"
+                />
+              </div>
+              <div class="col-6">
+                <img
+                  src="/assets/images/hotel-swimmingpool.png"
+                  alt="Swimming Pool"
+                  class="img-fluid rounded"
+                />
+              </div>
+              <div class="col-6">
+                <img
+                  src="/assets/images/hotel-restaurant.png"
+                  alt="Restaurant"
+                  class="img-fluid rounded"
+                />
+              </div>
+              <div class="col-6">
+                <img
+                  src="/assets/images/hotel-spa.png"
+                  alt="Spa"
+                  class="img-fluid rounded"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="about" class="about">
+    <!-- Rooms Section -->
+    <section id="rooms" class="py-5 bg-light">
       <div class="container">
-        <h2>About Us</h2>
-        <p>
-          KaveeN Hotel has been providing exceptional hospitality for over a
-          decade. Our mission is to ensure every guest has a memorable
-          experience.
-        </p>
-      </div>
-    </section>
-
-    <section id="gallery" class="gallery">
-      <div class="container">
-        <h2>Gallery</h2>
-        <div class="row">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold">Our Rooms & Suites</h2>
+          <p class="lead">Designed for your comfort</p>
+        </div>
+        <div class="row g-4">
           <div class="col-md-4">
-            <img
-              src="/assets/images/image-1.jpg"
-              alt="Gallery Image 1"
-              class="img-fluid"
-            />
+            <div class="card h-100 border-0 shadow-sm">
+              <img
+                src="/assets/images/hotel-dulexroom.png"
+                class="card-img-top"
+                alt="Deluxe Room"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Deluxe Room</h5>
+                <p class="card-text">
+                  Spacious room with modern amenities and stunning city views.
+                </p>
+                <ul class="list-unstyled">
+                  <li><i class="fas fa-wifi me-2"></i> Free WiFi</li>
+                  <li><i class="fas fa-tv me-2"></i> Smart TV</li>
+                  <li><i class="fas fa-coffee me-2"></i> Coffee maker</li>
+                </ul>
+              </div>
+              <div class="card-footer bg-transparent">
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="fw-bold text-primary">$199/night</span>
+                  <a href="#booking" class="btn btn-sm btn-primary">Book Now</a>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="col-md-4">
-            <img
-              src="/assets/images/image-2.jpg"
-              alt="Gallery Image 2"
-              class="img-fluid"
-            />
+            <div class="card h-100 border-0 shadow-sm">
+              <img
+                src="/assets/images/hotel-executivesuite.png"
+                class="card-img-top"
+                alt="Executive Suite"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Executive Suite</h5>
+                <p class="card-text">
+                  Luxurious suite with separate living area and premium
+                  amenities.
+                </p>
+                <ul class="list-unstyled">
+                  <li><i class="fas fa-wifi me-2"></i> Free WiFi</li>
+                  <li><i class="fas fa-hot-tub me-2"></i> Jacuzzi</li>
+                  <li><i class="fas fa-utensils me-2"></i> Mini bar</li>
+                </ul>
+              </div>
+              <div class="card-footer bg-transparent">
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="fw-bold text-primary">$299/night</span>
+                  <a href="#booking" class="btn btn-sm btn-primary">Book Now</a>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="col-md-4">
-            <img
-              src="/assets/images/image-3.jpg"
-              alt="Gallery Image 3"
-              class="img-fluid"
-            />
-          </div>
-          <div class="col-md-4">
-            <img
-              src="/assets/images/image-4.jpg"
-              alt="Gallery Image 4"
-              class="img-fluid"
-            />
-          </div>
-          <div class="col-md-4">
-            <img
-              src="/assets/images/image-5.jpg"
-              alt="Gallery Image 5"
-              class="img-fluid"
-            />
-          </div>
-          <div class="col-md-4">
-            <img
-              src="/assets/images/image-6.jpg"
-              alt="Gallery Image 6"
-              class="img-fluid"
-            />
-          </div>
-          <div class="col-md-4">
-            <img
-              src="/assets/images/image-7.jpg"
-              alt="Gallery Image 7"
-              class="img-fluid"
-            />
-          </div>
-          <div class="col-md-4">
-            <img
-              src="/assets/images/image-8.jpg"
-              alt="Gallery Image 8"
-              class="img-fluid"
-            />
-          </div>
-          <div class="col-md-4">
-            <img
-              src="/assets/images/image-9.jpg"
-              alt="Gallery Image 9"
-              class="img-fluid"
-            />
-          </div>
-          <div class="col-md-4">
-            <img
-              src="/assets/images/image-10.jpg"
-              alt="Gallery Image 10"
-              class="img-fluid"
-            />
+            <div class="card h-100 border-0 shadow-sm">
+              <img
+                src="/assets/images/hotel-presidentialsuite.png"
+                class="card-img-top"
+                alt="Presidential Suite"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Presidential Suite</h5>
+                <p class="card-text">
+                  Ultimate luxury with panoramic views and personalized service.
+                </p>
+                <ul class="list-unstyled">
+                  <li><i class="fas fa-wifi me-2"></i> Free WiFi</li>
+                  <li>
+                    <i class="fas fa-swimming-pool me-2"></i> Private pool
+                  </li>
+                  <li>
+                    <i class="fas fa-concierge-bell me-2"></i> 24/7 Butler
+                  </li>
+                </ul>
+              </div>
+              <div class="card-footer bg-transparent">
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="fw-bold text-primary">$499/night</span>
+                  <a href="#booking" class="btn btn-sm btn-primary">Book Now</a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="testimonials" class="testimonials">
+    <!-- Services Section -->
+    <section id="services" class="py-5">
       <div class="container">
-        <h2>Testimonials</h2>
-        <blockquote>
-          <p>"The best hotel experience I've ever had!" - Shehan T</p>
-        </blockquote>
+        <div class="text-center mb-5">
+          <h2 class="fw-bold">Our Services</h2>
+          <p class="lead">Enhancing your stay with premium services</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="text-center p-4">
+              <div
+                class="bg-primary bg-opacity-10 text-primary rounded-circle d-inline-flex align-items-center justify-content-center mb-3"
+                style="width: 80px; height: 80px"
+              >
+                <i class="fas fa-utensils fa-2x"></i>
+              </div>
+              <h4>Fine Dining</h4>
+              <p>
+                Experience culinary excellence at our award-winning restaurants
+                serving international and local cuisine.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="text-center p-4">
+              <div
+                class="bg-primary bg-opacity-10 text-primary rounded-circle d-inline-flex align-items-center justify-content-center mb-3"
+                style="width: 80px; height: 80px"
+              >
+                <i class="fas fa-spa fa-2x"></i>
+              </div>
+              <h4>Spa & Wellness</h4>
+              <p>
+                Rejuvenate your senses with our signature spa treatments and
+                state-of-the-art fitness center.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="text-center p-4">
+              <div
+                class="bg-primary bg-opacity-10 text-primary rounded-circle d-inline-flex align-items-center justify-content-center mb-3"
+                style="width: 80px; height: 80px"
+              >
+                <i class="fas fa-swimming-pool fa-2x"></i>
+              </div>
+              <h4>Infinity Pool</h4>
+              <p>
+                Relax by our stunning rooftop infinity pool with panoramic views
+                of the city skyline.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="text-center p-4">
+              <div
+                class="bg-primary bg-opacity-10 text-primary rounded-circle d-inline-flex align-items-center justify-content-center mb-3"
+                style="width: 80px; height: 80px"
+              >
+                <i class="fas fa-business-time fa-2x"></i>
+              </div>
+              <h4>Business Center</h4>
+              <p>
+                Fully equipped meeting rooms and business facilities for
+                corporate travelers.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="text-center p-4">
+              <div
+                class="bg-primary bg-opacity-10 text-primary rounded-circle d-inline-flex align-items-center justify-content-center mb-3"
+                style="width: 80px; height: 80px"
+              >
+                <i class="fas fa-car fa-2x"></i>
+              </div>
+              <h4>Transportation</h4>
+              <p>
+                Complimentary airport transfers and luxury car rental services.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="text-center p-4">
+              <div
+                class="bg-primary bg-opacity-10 text-primary rounded-circle d-inline-flex align-items-center justify-content-center mb-3"
+                style="width: 80px; height: 80px"
+              >
+                <i class="fas fa-concierge-bell fa-2x"></i>
+              </div>
+              <h4>24/7 Concierge</h4>
+              <p>
+                Our dedicated staff is always available to assist with any
+                request or arrangement.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <footer id="contact" class="footer">
-      <div class="container text-center">
-        <p>&copy; 2025 KaveeN Hotel. All rights reserved.</p>
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-5 bg-light">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold">Photo Gallery</h2>
+          <p class="lead">Explore our world of luxury</p>
+        </div>
+        <div class="row g-3">
+          <div class="col-md-4 col-6">
+            <a
+              href="#"
+              data-bs-toggle="modal"
+              data-bs-target="#galleryModal"
+              data-bs-img="/assets/images/hotel-lobby.png"
+            >
+              <img
+                src="/assets/images/hotel-lobby.png"
+                alt="Hotel Lobby"
+                class="img-fluid rounded gallery-img"
+              />
+            </a>
+          </div>
+          <div class="col-md-4 col-6">
+            <a
+              href="#"
+              data-bs-toggle="modal"
+              data-bs-target="#galleryModal"
+              data-bs-img="/assets/images/hotel-swimmingpool.png"
+            >
+              <img
+                src="/assets/images/hotel-swimmingpool.png"
+                alt="Swimming Pool"
+                class="img-fluid rounded gallery-img"
+              />
+            </a>
+          </div>
+          <div class="col-md-4 col-6">
+            <a
+              href="#"
+              data-bs-toggle="modal"
+              data-bs-target="#galleryModal"
+              data-bs-img="/assets/images/hotel-restaurant.png"
+            >
+              <img
+                src="/assets/images/hotel-restaurant.png"
+                alt="Restaurant"
+                class="img-fluid rounded gallery-img"
+              />
+            </a>
+          </div>
+          <div class="col-md-4 col-6">
+            <a
+              href="#"
+              data-bs-toggle="modal"
+              data-bs-target="#galleryModal"
+              data-bs-img="/assets/images/hotel-spa.png"
+            >
+              <img
+                src="/assets/images/hotel-spa.png"
+                alt="Spa"
+                class="img-fluid rounded gallery-img"
+              />
+            </a>
+          </div>
+          <div class="col-md-4 col-6">
+            <a
+              href="#"
+              data-bs-toggle="modal"
+              data-bs-target="#galleryModal"
+              data-bs-img="/assets/images/hotel-bar.png"
+            >
+              <img
+                src="/assets/images/hotel-bar.png"
+                alt="Bar"
+                class="img-fluid rounded gallery-img"
+              />
+            </a>
+          </div>
+          <div class="col-md-4 col-6">
+            <a
+              href="#"
+              data-bs-toggle="modal"
+              data-bs-target="#galleryModal"
+              data-bs-img="/assets/images/hotel-gym.png"
+            >
+              <img
+                src="/assets/images/hotel-gym.png"
+                alt="Gym"
+                class="img-fluid rounded gallery-img"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-5">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold">Guest Reviews</h2>
+          <p class="lead">What our guests say about us</p>
+        </div>
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <div
+              id="testimonialCarousel"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div
+                    class="testimonial-item text-center p-4 bg-light rounded"
+                  >
+                    <div class="mb-3">
+                      <i
+                        class="fas fa-quote-left fa-2x text-primary opacity-25"
+                      ></i>
+                    </div>
+                    <p class="mb-4">
+                      "Absolutely stunning hotel with exceptional service. The
+                      staff went above and beyond to make our stay memorable.
+                      The room was spacious and luxurious with breathtaking
+                      views."
+                    </p>
+                    <div
+                      class="d-flex align-items-center justify-content-center"
+                    >
+                      <img
+                        src="https://randomuser.me/api/portraits/women/32.jpg"
+                        alt="Guest"
+                        class="rounded-circle me-3"
+                        width="60"
+                      />
+                      <div class="text-start">
+                        <h6 class="mb-0">Sarah Johnson</h6>
+                        <small class="text-muted">New York, USA</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div
+                    class="testimonial-item text-center p-4 bg-light rounded"
+                  >
+                    <div class="mb-3">
+                      <i
+                        class="fas fa-quote-left fa-2x text-primary opacity-25"
+                      ></i>
+                    </div>
+                    <p class="mb-4">
+                      "The best hotel experience I've ever had! Perfect blend of
+                      luxury and comfort. The spa treatments were divine and the
+                      food at the restaurant was exceptional. Will definitely
+                      return!"
+                    </p>
+                    <div
+                      class="d-flex align-items-center justify-content-center"
+                    >
+                      <img
+                        src="https://randomuser.me/api/portraits/men/45.jpg"
+                        alt="Guest"
+                        class="rounded-circle me-3"
+                        width="60"
+                      />
+                      <div class="text-start">
+                        <h6 class="mb-0">Michael Chen</h6>
+                        <small class="text-muted">London, UK</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div
+                    class="testimonial-item text-center p-4 bg-light rounded"
+                  >
+                    <div class="mb-3">
+                      <i
+                        class="fas fa-quote-left fa-2x text-primary opacity-25"
+                      ></i>
+                    </div>
+                    <p class="mb-4">
+                      "Impeccable service from check-in to check-out. The
+                      attention to detail is remarkable. The executive suite was
+                      spacious and beautifully appointed. Highly recommend this
+                      hotel!"
+                    </p>
+                    <div
+                      class="d-flex align-items-center justify-content-center"
+                    >
+                      <img
+                        src="https://randomuser.me/api/portraits/women/68.jpg"
+                        alt="Guest"
+                        class="rounded-circle me-3"
+                        width="60"
+                      />
+                      <div class="text-start">
+                        <h6 class="mb-0">Emma Rodriguez</h6>
+                        <small class="text-muted">Madrid, Spain</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#testimonialCarousel"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#testimonialCarousel"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="py-5 bg-primary text-white">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 mb-4 mb-lg-0">
+            <h2 class="fw-bold mb-3">Ready for an Unforgettable Stay?</h2>
+            <p class="lead mb-4">
+              Book your room today and experience luxury like never before.
+            </p>
+            <div class="d-flex align-items-center">
+              <i class="fas fa-phone-alt fa-2x me-3"></i>
+              <div>
+                <h5 class="mb-0">Reservation</h5>
+                <h4 class="mb-0 fw-bold">+94 112 345 678</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="card shadow">
+              <div class="card-body p-4">
+                <h4 class="card-title mb-4 text-dark">Book Your Stay</h4>
+                <form>
+                  <div class="row g-3">
+                    <div class="col-md-6">
+                      <label for="checkIn" class="form-label text-dark"
+                        >Check-in</label
+                      >
+                      <input type="date" class="form-control" id="checkIn" />
+                    </div>
+                    <div class="col-md-6">
+                      <label for="checkOut" class="form-label text-dark"
+                        >Check-out</label
+                      >
+                      <input type="date" class="form-control" id="checkOut" />
+                    </div>
+                    <div class="col-md-6">
+                      <label for="adults" class="form-label text-dark"
+                        >Adults</label
+                      >
+                      <select class="form-select" id="adults">
+                        <option value="1">1 Adult</option>
+                        <option value="2">2 Adults</option>
+                        <option value="3">3 Adults</option>
+                        <option value="4">4 Adults</option>
+                      </select>
+                    </div>
+                    <div class="col-md-6">
+                      <label for="children" class="form-label text-dark"
+                        >Children</label
+                      >
+                      <select class="form-select" id="children">
+                        <option value="0">0 Children</option>
+                        <option value="1">1 Child</option>
+                        <option value="2">2 Children</option>
+                      </select>
+                    </div>
+                    <div class="col-12">
+                      <button type="submit" class="btn btn-primary w-100">
+                        Check Availability
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold">Contact Us</h2>
+          <p class="lead">We'd love to hear from you</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <div class="contact-info">
+              <div class="d-flex mb-4">
+                <div
+                  class="bg-primary bg-opacity-10 text-primary rounded-circle d-flex align-items-center justify-content-center me-3"
+                  style="width: 50px; height: 50px"
+                >
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div>
+                  <h5 class="mb-0">Address</h5>
+                  <p class="mb-0">123 Luxury Street, Colombo, Sri Lanka</p>
+                </div>
+              </div>
+              <div class="d-flex mb-4">
+                <div
+                  class="bg-primary bg-opacity-10 text-primary rounded-circle d-flex align-items-center justify-content-center me-3"
+                  style="width: 50px; height: 50px"
+                >
+                  <i class="fas fa-phone-alt"></i>
+                </div>
+                <div>
+                  <h5 class="mb-0">Phone</h5>
+                  <p class="mb-0">+94 112 345 678</p>
+                </div>
+              </div>
+              <div class="d-flex mb-4">
+                <div
+                  class="bg-primary bg-opacity-10 text-primary rounded-circle d-flex align-items-center justify-content-center me-3"
+                  style="width: 50px; height: 50px"
+                >
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div>
+                  <h5 class="mb-0">Email</h5>
+                  <p class="mb-0">info@kaveenhotel.com</p>
+                </div>
+              </div>
+              <div class="social-links mt-4">
+                <a href="#" class="btn btn-outline-primary btn-sm me-2"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a href="#" class="btn btn-outline-primary btn-sm me-2"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+                <a href="#" class="btn btn-outline-primary btn-sm me-2"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a href="#" class="btn btn-outline-primary btn-sm me-2"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <div class="card shadow-sm">
+              <div class="card-body p-4">
+                <form>
+                  <div class="row g-3">
+                    <div class="col-md-6">
+                      <label for="name" class="form-label">Name</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="name"
+                        required
+                      />
+                    </div>
+                    <div class="col-md-6">
+                      <label for="email" class="form-label">Email</label>
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="email"
+                        required
+                      />
+                    </div>
+                    <div class="col-12">
+                      <label for="subject" class="form-label">Subject</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="subject"
+                        required
+                      />
+                    </div>
+                    <div class="col-12">
+                      <label for="message" class="form-label">Message</label>
+                      <textarea
+                        class="form-control"
+                        id="message"
+                        rows="4"
+                        required
+                      ></textarea>
+                    </div>
+                    <div class="col-12">
+                      <button type="submit" class="btn btn-primary">
+                        Send Message
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Map Section -->
+    <div class="map-container">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.798511757686!2d79.86045441539345!3d6.921682495003807!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2596d3cb8fe07%3A0x2b0ae631abb5e2e9!2sColombo%2C%20Sri%20Lanka!5e0!3m2!1sen!2sus!4v1620000000000!5m2!1sen!2sus"
+        width="100%"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+      ></iframe>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 mb-4 mb-lg-0">
+            <h5 class="fw-bold mb-3">KaveeN Hotel</h5>
+            <p>
+              Experience luxury redefined at our premier hotel in the heart of
+              the city. Your comfort is our priority.
+            </p>
+            <div class="social-links">
+              <a href="#" class="text-white me-2"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" class="text-white me-2"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="#" class="text-white me-2"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="text-white me-2"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+            <h5 class="fw-bold mb-3">Quick Links</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="#home" class="text-white text-decoration-none">Home</a>
+              </li>
+              <li class="mb-2">
+                <a href="#rooms" class="text-white text-decoration-none"
+                  >Rooms</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#services" class="text-white text-decoration-none"
+                  >Services</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#gallery" class="text-white text-decoration-none"
+                  >Gallery</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#contact" class="text-white text-decoration-none"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="fw-bold mb-3">Contact Info</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <i class="fas fa-map-marker-alt me-2"></i> 123 Luxury Street,
+                Colombo
+              </li>
+              <li class="mb-2">
+                <i class="fas fa-phone-alt me-2"></i> +94 112 345 678
+              </li>
+              <li class="mb-2">
+                <i class="fas fa-envelope me-2"></i> info@kaveenhotel.com
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3">
+            <h5 class="fw-bold mb-3">Newsletter</h5>
+            <p>Subscribe to our newsletter for special offers and updates.</p>
+            <form class="mb-3">
+              <div class="input-group">
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Your Email"
+                />
+                <button class="btn btn-primary" type="submit">Subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <hr class="my-4" />
+        <div class="row">
+          <div class="col-md-6 text-center text-md-start">
+            <p class="mb-0">&copy; 2025 KaveeN Hotel. All rights reserved.</p>
+          </div>
+          <div class="col-md-6 text-center text-md-end">
+            <p class="mb-0">
+              Designed with <i class="fas fa-heart text-danger"></i> by KaveeN
+            </p>
+          </div>
+        </div>
       </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Gallery Modal -->
+    <div class="modal fade" id="galleryModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header border-0">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body text-center">
+            <img src="" alt="Gallery Image" class="img-fluid" id="modalImage" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/script.js"></script>
   </body>
 </html>
